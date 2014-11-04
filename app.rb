@@ -1,9 +1,9 @@
 require "sinatra"
 
-avatar_path = "images/avatars/"
+avatar_path = "public/images/avatars/"
 avatar_files = Dir["#{avatar_path}*.{gif,jpeg,png}"]
 
-sig_path = "images/sigs/"
+sig_path = "public/images/sigs/"
 sig_files = Dir["#{sig_path}*.{gif,jpeg,png}"]
 
 get "/avatar.gif" do
