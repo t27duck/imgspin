@@ -1,10 +1,10 @@
 require "sinatra"
 
 avatar_path = "public/images/avatars/"
-avatar_files = Dir["#{avatar_path}*.{gif,jpeg,png}"]
+avatar_files = Dir["#{avatar_path}*.gif"]
 
 sig_path = "public/images/sigs/"
-sig_files = Dir["#{sig_path}*.{gif,jpeg,png}"]
+sig_files = Dir["#{sig_path}*.gif"]
 
 get "/avatar.gif" do
   file = avatar_files.sample
@@ -12,7 +12,7 @@ get "/avatar.gif" do
   headers \
     "Cache-Control" => "no-cache, private",
     "Pragma"        => "no-cache",
-    "Content-type"  => "multipart/x-mixed-replace; boundary=#{boundary}"
+    "Content-type"  => "multipart/x-mixed-replace"
 
   content_type "image/gif"
   File.read(file)
@@ -24,7 +24,7 @@ get "/sig.gif" do
   headers \
     "Cache-Control" => "no-cache, private",
     "Pragma"        => "no-cache",
-    "Content-type"  => "multipart/x-mixed-replace; boundary=#{boundary}"
+    "Content-type"  => "multipart/x-mixed-replace"
 
   content_type "image/gif"
   File.read(file)
