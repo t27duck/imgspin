@@ -2,3 +2,5 @@
 config/unicorn.rb
 tmp/*
 log/*
+.bundle/*
+vendor/*
