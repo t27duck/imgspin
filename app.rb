@@ -6,6 +6,15 @@ avatar_files = Dir["#{avatar_path}*.gif"]
 sig_path = "public/images/sigs/"
 sig_files = Dir["#{sig_path}*.gif"]
 
+get "/" do
+  "Hello"
+end
+
+not_found do
+  status 404
+  "404-ed!"
+end
+
 get "/avatar.gif" do
   file = avatar_files.sample
 
