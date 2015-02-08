@@ -1,0 +1,5 @@
+root = "#{Dir.getwd}"
+
+bind "unix:///tmp/puma.pumatra.sock"
+pidfile "#{root}/tmp/pids/puma.pid"
+quiet
