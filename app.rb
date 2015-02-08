@@ -8,10 +8,24 @@ sig_files = Dir["#{sig_path}*.{gif,jpeg,png}"]
 
 get "/avatar.gif" do
   file = avatar_files.sample
-  send_file file, :disposition => :inline
+
+  headers \
+    "Cache-Control" => "no-cache, private",
+    "Pragma"        => "no-cache",
+    "Content-type"  => "multipart/x-mixed-replace; boundary=#{boundary}"
+
+  content_type "image/gif"
+  File.read(file)
 end
 
 get "/sig.gif" do
   file = sig_files.sample
-  send_file file, :disposition => :inline
+
+  headers \
+    "Cache-Control" => "no-cache, private",
+    "Pragma"        => "no-cache",
+    "Content-type"  => "multipart/x-mixed-replace; boundary=#{boundary}"
+
+  content_type "image/gif"
+  File.read(file)
 end
