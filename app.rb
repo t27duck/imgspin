@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "sinatra"
 
 avatar_path = "public/images/avatars/"

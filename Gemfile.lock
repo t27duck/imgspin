@@ -2,8 +2,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     mustermann (1.0.3)
-    puma (3.12.0)
-    rack (2.0.6)
+    puma (3.12.1)
+    rack (2.0.7)
     rack-protection (2.0.5)
       rack
     sinatra (2.0.5)
