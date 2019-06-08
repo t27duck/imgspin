@@ -1,6 +1,4 @@
 .DS_STORE
-config/unicorn.rb
-config/puma.rb
 tmp/*
 log/*
 .bundle/*
