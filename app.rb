@@ -21,9 +21,9 @@ get "/avatar.gif" do
   file = avatar_files.sample
 
   headers \
-    "Cache-Control" => "no-cache, private",
-    "Pragma"        => "no-cache",
-    "Content-type"  => "multipart/x-mixed-replace"
+    "cache-control" => "no-cache, private",
+    "pragma"        => "no-cache",
+    "content-type"  => "multipart/x-mixed-replace"
 
   content_type "image/gif"
   File.read(file)
@@ -33,9 +33,9 @@ get "/sig.gif" do
   file = sig_files.sample
 
   headers \
-    "Cache-Control" => "no-cache, private",
-    "Pragma"        => "no-cache",
-    "Content-type"  => "multipart/x-mixed-replace"
+    "cache-control" => "no-cache, private",
+    "pragma"        => "no-cache",
+    "content-type"  => "multipart/x-mixed-replace"
 
   content_type "image/gif"
   File.read(file)
