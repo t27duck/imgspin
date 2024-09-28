@@ -1,3 +1,3 @@
 root = Dir.getwd
-bind "unix:///tmp/puma.imgspin.sock"
+bind "unix:///apps/socks/puma.imgspin.sock"
 quiet
