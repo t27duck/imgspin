@@ -1,3 +1,7 @@
-root = Dir.getwd
-port ENV["PORT"] if ENV["PORT"]
+threads_count = ENV.fetch("RAILS_MAX_THREADS", 3)
+threads threads_count, threads_count
+
+port ENV.fetch("PORT", 3000)
+pidfile ENV["PIDFILE"] if ENV["PIDFILE"]
+
 quiet

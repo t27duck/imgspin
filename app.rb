@@ -12,6 +12,10 @@ get "/" do
   "Hello"
 end
 
+get "/up" do
+  "OK"
+end
+
 not_found do
   status 404
   "404-ed!"

@@ -3,3 +3,6 @@ tmp/*
 log/*
 .bundle/*
 vendor/*
+
+/.env*
+!/.env*.erb
