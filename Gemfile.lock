@@ -74,9 +74,9 @@ GEM
       net-ssh (>= 2.8.0)
       ostruct
     thor (1.4.0)
-    thruster (0.1.14)
-    thruster (0.1.14-arm64-darwin)
-    thruster (0.1.14-x86_64-linux)
+    thruster (0.1.15)
+    thruster (0.1.15-arm64-darwin)
+    thruster (0.1.15-x86_64-linux)
     tilt (2.4.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
