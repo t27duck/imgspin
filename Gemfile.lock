@@ -77,9 +77,9 @@ GEM
       net-ssh (>= 2.8.0)
       ostruct
     thor (1.5.0)
-    thruster (0.1.21)
-    thruster (0.1.21-arm64-darwin)
-    thruster (0.1.21-x86_64-linux)
+    thruster (0.1.22)
+    thruster (0.1.22-arm64-darwin)
+    thruster (0.1.22-x86_64-linux)
     tilt (2.6.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -128,9 +128,9 @@ CHECKSUMS
   sinatra (4.2.1) sha256=b7aeb9b11d046b552972ade834f1f9be98b185fa8444480688e3627625377080
   sshkit (1.25.0) sha256=c8c6543cdb60f91f1d277306d585dd11b6a064cb44eab0972827e4311ff96744
   thor (1.5.0) sha256=e3a9e55fe857e44859ce104a84675ab6e8cd59c650a49106a05f55f136425e73
-  thruster (0.1.21) sha256=dc67928f36e5894844579a95e45637a5091db7a7ea05468ee8c2c6eb0a3f77cf
-  thruster (0.1.21-arm64-darwin) sha256=bd8db9f57fae2cbb3fe08ebab49cb47fe49608122dac23daf0ce709adfb9bfc8
-  thruster (0.1.21-x86_64-linux) sha256=6e2fbcf826540a72d3710ae4db072c2333287ac2ee57e7e52f35bc10900d74a7
+  thruster (0.1.22) sha256=f34fb82bd3e31570ae8f8b930e484f9e1db7b080cbc993d49090b161879c3e05
+  thruster (0.1.22-arm64-darwin) sha256=d0506142832b1b020ab687dbfb938ec7cb07eeaabebc7f8682a73e8f0636917b
+  thruster (0.1.22-x86_64-linux) sha256=b96436be7f0854db632f421b4a53b795429a0bc95c15c2e1c1a7a6fdd1ed090f
   tilt (2.6.1) sha256=35a99bba2adf7c1e362f5b48f9b581cce4edfba98117e34696dde6d308d84770
   tzinfo (2.0.6) sha256=8daf828cc77bcf7d63b0e3bdb6caa47e2272dcfaf4fbfe46f8c3a9df087a829b
   uri (1.1.1) sha256=379fa58d27ffb1387eaada68c749d1426738bd0f654d812fcc07e7568f5c57c6
