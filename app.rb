@@ -26,8 +26,7 @@ get "/avatar.gif" do
 
   headers \
     "cache-control" => "no-cache, private",
-    "pragma"        => "no-cache",
-    "content-type"  => "multipart/x-mixed-replace"
+    "pragma"        => "no-cache"
 
   content_type "image/gif"
   File.read(file)
@@ -38,8 +37,7 @@ get "/sig.gif" do
 
   headers \
     "cache-control" => "no-cache, private",
-    "pragma"        => "no-cache",
-    "content-type"  => "multipart/x-mixed-replace"
+    "pragma"        => "no-cache"
 
   content_type "image/gif"
   File.read(file)
